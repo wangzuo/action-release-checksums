@@ -1,0 +1,13 @@
+name: "Hello World"
+description: "Greet someone and record the time"
+inputs:
+  repo-token:
+    description: "The GitHub token used to manage labels"
+    required: false
+    default: ${{ github.token }}
+outputs:
+  time: # id of output
+    description: "The time we greeted you"
+runs:
+  using: "node16"
+  main: "dist/index.js"
