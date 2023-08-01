@@ -1,13 +1,11 @@
-name: "Hello World"
-description: "Greet someone and record the time"
+name: "Release Checksums"
+description: "Github Action for creating checksums.txt in release"
+author: "wangzuo"
 inputs:
-  repo-token:
-    description: "The GitHub token used to manage labels"
+  token:
+    description: "Authorized secret GitHub Personal Access Token. Defaults to github.token"
     required: false
     default: ${{ github.token }}
-outputs:
-  time: # id of output
-    description: "The time we greeted you"
 runs:
   using: "node16"
   main: "dist/index.js"
