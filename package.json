@@ -1,6 +1,6 @@
 {
   "name": "action-release-checksums",
-  "version": "0.1.0",
+  "version": "1.0.1",
   "scripts": {
     "lint": "eslint .",
     "prepare": "ncc build index.js -o dist --source-map --license licenses.txt"

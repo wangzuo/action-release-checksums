@@ -3,7 +3,7 @@ const github = require("@actions/github");
 const crypto = require("crypto");
 
 async function run() {
-  const token = core.getInput("repo-token");
+  const token = core.getInput("token");
   const octokit = github.getOctokit(token);
 
   let release = null;

@@ -9797,7 +9797,7 @@ const github = __nccwpck_require__(5438);
 const crypto = __nccwpck_require__(6113);
 
 async function run() {
-  const token = core.getInput("repo-token");
+  const token = core.getInput("token");
   const octokit = github.getOctokit(token);
 
   let release = null;
